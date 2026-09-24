@@ -1,0 +1,3 @@
+import { Link } from "@tanstack/react-router";
+import { cn } from "@/lib/utils";
+export function Brand({compact=false,inverse=false}:{compact?:boolean;inverse?:boolean}){return <Link to="/" className="inline-flex min-w-0 items-center gap-2.5" aria-label="Bitik Tech, accueil"><span className={cn("grid size-9 shrink-0 place-items-center rounded-md bg-primary text-sm font-extrabold text-primary-foreground shadow-brand",inverse&&"bg-primary-foreground text-primary")}>BT</span>{!compact&&<span className={cn("truncate text-[15px] font-extrabold text-foreground",inverse&&"text-primary-foreground")}>Bitik Tech</span>}</Link>}
